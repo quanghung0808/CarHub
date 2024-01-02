@@ -25,7 +25,7 @@ export interface ShowMoreProps {
 
 export interface FilterProps {
   manufacturer?: string;
-  year?: number;
+  year?: string;
   model?: string;
   limit?: number;
   fuel?: string;
@@ -38,6 +38,11 @@ export interface OptionProps {
 export interface CustomFilterProps {
   options: OptionProps[];
   setFilter: (value: string) => void;
+}
+
+export interface CustomFilterYearProps {
+  options: OptionProps[];
+  setFilter: (value: number) => void;
 }
 export interface CustomButtonProps {
   isDisabled?: boolean;

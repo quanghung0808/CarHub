@@ -14,7 +14,7 @@ export default function Home() {
   const [model, setModel] = useState("");
   //filter states
   const [fuel, setFuel] = useState("");
-  const [year, setYear] = useState(2022);
+  const [year, setYear] = useState("2022");
   //pagination states
   const [limit, setLimit] = useState(10);
   const getCars = async () => {
@@ -22,7 +22,7 @@ export default function Home() {
     try {
       const results = await fetchCars({
         manufacturer: manufacturer || "",
-        year: year || 2022,
+        year: year || "2022",
         fuel: fuel || "",
         limit: limit || 10,
         model: model || "",
@@ -53,7 +53,7 @@ export default function Home() {
 
           <div className="home__filter-container">
             <CustomFilter options={fuels} setFilter={setFuel} />
-            {/* <CustomFilter options={yearsOfProduction} setFilter={setYear} /> */}
+            <CustomFilter options={yearsOfProduction} setFilter={setYear} />
           </div>
         </div>
 
