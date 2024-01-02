@@ -53,7 +53,7 @@ export default function Home() {
 
           <div className="home__filter-container">
             <CustomFilter options={fuels} setFilter={setFuel} />
-            <CustomFilter options={yearsOfProduction} setFilter={setYear} />
+            {/* <CustomFilter options={yearsOfProduction} setFilter={setYear} /> */}
           </div>
         </div>
 
@@ -98,7 +98,7 @@ export default function Home() {
         ) : (
           <div className="home__error-container">
             <h2 className="text-black text-xl font-bold">Oops, no results</h2>
-            <p>{allCars?.message}</p>
+            {/* <p>{allCars?.message}</p> */}
           </div>
         )}
       </div>

@@ -37,6 +37,7 @@ export interface OptionProps {
 
 export interface CustomFilterProps {
   options: OptionProps[];
+  setFilter: (value: string) => void;
 }
 export interface CustomButtonProps {
   isDisabled?: boolean;
